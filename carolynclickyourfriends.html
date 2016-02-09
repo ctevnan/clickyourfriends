@@ -12,9 +12,7 @@
       <div class="row">
         <div class="col-md-6">
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Click Me
-          </button>
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Click Me</button>
             <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -24,15 +22,11 @@
                     <h4 class="modal-title" id="myModalLabel">Are You Ready to Click Some Shamoons?</h4>
                   </div>
                   <div class="modal-body">
-                    Welcome to Click the Shamoons!
-
-                    Each player has just twenty seconds to click on as many Shamoons as they can!
-                    Watch out, theres a Jed in there, and Jeds do something different when you click
-                    on them...
-
-                    At the end of each player's time, their score will be returned to them.
-
-                    Good luck, and get clicking!
+                    <h1>Welcome to Click the Shamoons!</h1>
+                    <p>Each player has just twenty seconds to click on as many Shamoons as they can!</p>
+                    <p>Watch out, theres a Jed in there, and Jeds do something different than Shamoons when you click on them.</p>
+                    <p>At the end of each player's time, their score will be returned to them.</p>
+                    <p>Good luck, and get clicking!</p>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -122,6 +116,14 @@
         </div>
       </div>                                                                
     </div>
+    <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+     <div id="result"></div>
+     <p>Click the button to see the counter increase.</p>
+    
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>  
   <script type="text/javascript" src="js/modal.js"></script> 
   <script type="text/javascript" src="js/clickfunctions.js"></script>
   <script type="text/javascript" src="js/timer.js"></script>

@@ -3,8 +3,11 @@ var timerInterval;
 var toggleBtn = document.getElementById("toggleBtn");
 
 setTimeout(function() {
-  toggleBtn.parentNode.removeChild(toggleBtn);
-  alert("Click the Shamoons as fast as you can!")
+  if(secondsCount === 0){
+    clearInterval(timerInterval);
+    toggleBtn.parentNode.removeChild(toggleBtn);
+    alert("Click the Shamoons as fast as you can!") 
+  }
 }, 20000);
 
 function addSeconds() {
@@ -24,7 +27,7 @@ function toggleTime() {
     this.innerHTML = "Start";
     this.setAttribute("data-state", "start");
     clearInterval(timerInterval);
-    alert("That took you" + secondsCount + " seconds");
+    alert("That took you " + secondsCount + " seconds");
   }  
 }
 
