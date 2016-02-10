@@ -4,9 +4,9 @@ var toggleBtn = document.getElementById("toggleBtn");
 
 setTimeout(function() {
   if(secondsCount === 0){
-    clearInterval(timerInterval);
-    toggleBtn.parentNode.removeChild(toggleBtn);
-    alert("Click the Shamoons as fast as you can!") 
+    startInterval(timerInterval);
+    toggleBtn.parentNode.removeChild("toggleBtn");
+  alert("Click the Shamoons as fast as you can!")
   }
 }, 20000);
 
@@ -45,3 +45,4 @@ function clickCounter() {
 }
 
 toggleBtn.addEventListener("click", toggleTime);
+clickCounterBtn.addEventListener("click", clickcount);
