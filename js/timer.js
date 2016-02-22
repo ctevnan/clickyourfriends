@@ -17,5 +17,14 @@ $(document).ready(function() {
       $("#scoreModal .modal-body").empty();
 
       $("#scoreModal .modal-body").append("<p>The game is over. You clicked" + trackGameScore + " Shamoons.</p>");
-    }
+
+      $("#scoreModal").modal("show");
+
+      $("#scoreModal").on("hide.bs.modal", function() {
+        $("#.score").text("");
+      });
+      $(".img-responsive").attr("disabled", true);
+    }, 20000);
   }
+
+  
