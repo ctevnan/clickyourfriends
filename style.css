@@ -1,4 +1,23 @@
 body {
   background-color: darkred;
 }
+.img-responsive {
+  height:280px;
+  width:280px;
+}
 
+.btn-block {
+  font-size: 25px;
+}
+
+.gameRunning {
+  border: 6px solid darkgreen;
+}
+
+.gameNotRunning {
+  border: 6px solid yellow;
+}
+
+#verifyModal .img-responsive {
+  width: auto;
+}

@@ -6,11 +6,11 @@ $(document).ready(function() {
   $(".img-responsive").attr("disabled", true);
 
   function countInc() {
-    trackGameScore+=1;
+    trackGameScore +=1;
 
-    $(".score").text(trackGameScore);
+    $("score").text(trackGameScore);
   }
-}
+})
 
   function countDescd() {
     setTimeout(function count() {
@@ -21,7 +21,7 @@ $(document).ready(function() {
       $("#scoreModal").modal("show");
 
       $("#scoreModal").on("hide.bs.modal", function() {
-        $("#.score").text("");
+        $("score").text("");
       });
       $(".img-responsive").attr("disabled", true);
     }, 20000);
@@ -42,4 +42,4 @@ $(document).ready(function() {
 
     countDescd();
   });  
-});
+;
