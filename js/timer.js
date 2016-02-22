@@ -27,4 +27,19 @@ $(document).ready(function() {
     }, 20000);
   }
 
+  $(".img-responsive").on("click", function() {
+    if ($(this).attr("disabled")) {
+      return;
+    }
+    $(this).removeClass("gameRunning").addClass("gameNotRunning").attr("disabled", true);
+    countInc();
+  });
   
+  $(".btn-block").on("click", function() {
+    trackGameScore =0;
+
+    $(".img-responsive").attr("disabled", false).removeClass("gameNotRunning").addClass("gameRunning");
+
+    countDescd();
+  });  
+});
