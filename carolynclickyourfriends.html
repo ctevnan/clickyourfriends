@@ -5,7 +5,6 @@
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
       <link rel="stylesheet" type="text/css" href="style.css">
-      <meta name="viewport" content="width=device-width", "initial-scale=1">
  </head>
  <body>
     <div class="container">
@@ -24,7 +23,7 @@
                   <div class="modal-body">
                     <h1>Welcome to Click the Shamoons!</h1>
                     <p>Each player has just twenty seconds to click on as many Shamoons as they can!</p>
-                    <p>Watch out, theres a Jed in there, and Jeds do something different than Shamoons when you click on them.</p>
+                    <p>You'll notice that there is a Jed in there too. Jeds do something different than Shamoons when you click on them.</p>
                     <p>At the end of each player's time, their score will be returned to them.</p>
                     <p>Good luck, and get clicking!</p>
                   </div>
@@ -36,9 +35,46 @@
             </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-2">
-          <img class="img-responsive" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg">
+      <div class="panel panel-default">
+        <div class="panel-heading">Click The Shamoons</div>
+          <div class="panel-body">
+            <div class="startButton">
+              <h1>Remember, you only have 20 seconds!</h1>
+              <buttontype="button" class="btn btn-success" id="startGameBtn" data-state="start">Start</button>
+            </div>
+            <h2>Score: <span class="score"></span></h2>
+          </div>
+        </div>
+      </div>      
+      </div>
+      <div class="row-fluid">
+        <div class="table-responsive">
+          <table id="game-table" class="table table-bordered">
+            <tr>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+            </tr>
+            <tr>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+              <td>
+                <img id="shamoons" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg"></td>
+            </tr>                  
+
         </div>
         <div class="col-md-2">
           <img class="img-responsive" src="https://avatars.slack-edge.com/2015-10-12/12368586194_38746182219c6428a299_512.jpg">
