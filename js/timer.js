@@ -8,9 +8,9 @@ $(document).ready(function() {
   function countInc() {
     trackGameScore +=1;
 
-    $("score").text(trackGameScore);
+    $(".score").text(trackGameScore);
   }
-})
+
 
   function countDescd() {
     setTimeout(function count() {
@@ -42,4 +42,4 @@ $(document).ready(function() {
 
     countDescd();
   });  
-;
+});
