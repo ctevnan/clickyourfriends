@@ -1,5 +1,5 @@
 body {
-  background-color: darkred;
+  background-color: lightpink;
 }
 .img-responsive {
   height:280px;
@@ -11,7 +11,7 @@ body {
 }
 
 .gameRunning {
-  border: 6px solid darkgreen;
+  border: 6px solid hotpink;
 }
 
 .gameNotRunning {
