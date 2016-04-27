@@ -16,7 +16,7 @@ $(document).ready(function() {
     setTimeout(function count() {
       $("#scoreModal .modal-body").empty();
 
-      $("#scoreModal .modal-body").append("<p>The game is over. You clicked" + trackGameScore + " Shamoons.</p>");
+      $("#scoreModal .modal-body").append("<p>The game is over. You clicked " + trackGameScore + " eggs!</p>");
 
       $("#scoreModal").modal("show");
 

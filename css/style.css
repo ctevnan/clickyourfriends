@@ -2,8 +2,8 @@ body {
   background-color: lightpink;
 }
 .img-responsive {
-  height:280px;
-  width:280px;
+  height:200px;
+  width:180px;
 }
 
 .btn-block {
